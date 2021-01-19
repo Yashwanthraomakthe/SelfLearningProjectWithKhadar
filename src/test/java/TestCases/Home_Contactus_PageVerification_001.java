@@ -100,7 +100,7 @@ public class Home_Contactus_PageVerification_001 extends BaseClass{
 
 	}
 
-	@Test(enabled = false)// try to complete file upload using robot class in Java
+	@Test()// try to complete file upload using robot class in Java
 	public void Monster_FileUploadUsingRobotClass() throws InterruptedException, AWTException {
 		
 		// Specify the file location with extension
