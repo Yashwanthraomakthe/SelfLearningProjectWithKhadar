@@ -3,8 +3,9 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="Utilities.Listeners"/>
+    <listener class-name="Utilities.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
+  <test thread-count="5" verbose="0" name="Test(failed)" parallel="classes">
     <classes>
       <class name="TestCases.Home_AddToCart_CheckProduct_003">
         <methods>
@@ -20,13 +21,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- TestCases.Home_CartButton_Verification_002 -->
-      <class name="TestCases.Home_Contactus_PageVerification_001">
-        <methods>
-          <include name="verifyContactUseLink"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- TestCases.Home_Contactus_PageVerification_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

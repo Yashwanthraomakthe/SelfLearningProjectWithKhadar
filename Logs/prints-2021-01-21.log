@@ -1,0 +1,5 @@
+23:07:53.273 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Setup Done
+23:07:53.995 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Pass
+23:07:56.108 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Setup Done
+23:07:56.109 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Pass
+23:07:59.259 [TestNG-test=Test-5] INFO  TestCases.BaseClass - verifySortByDropDowm Test method Setup Done

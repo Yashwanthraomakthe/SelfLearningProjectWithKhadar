@@ -1,1 +1,3 @@
-21:35:37.552 [TestNG-test=Test-2] INFO  TestCases.Home_Sign_Registration_004 - completeRegistraion Test method Setup Done
+23:07:59.260 [TestNG-test=Test-5] INFO  TestCases.BaseClass - verifySortByDropDowm Test method Pass
+23:09:26.997 [TestNG-test=Test-2] INFO  TestCases.Home_Sign_Registration_004 - completeRegistraion Test method Setup Done
+23:09:43.958 [TestNG-test=Test-4] INFO  TestCases.Home_Footer_InformationLinks_Verification_004 - verifyMyAccountFooterLinks Test method Setup Done and Passed
