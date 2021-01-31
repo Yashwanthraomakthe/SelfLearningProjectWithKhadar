@@ -32,7 +32,7 @@ public class Home_CartButton_Verification_002 extends BaseClass {
 
 	}
 
-	@Test(priority = 2)
+	@Test(enabled=false)
 	public void verifyCartButtonWithProduct() throws InterruptedException {
 
 		HomePage hp = new HomePage(driver);

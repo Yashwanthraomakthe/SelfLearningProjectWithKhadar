@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.aventstack.extentreports.ExtentReports;
@@ -26,8 +28,18 @@ public class BaseClass {
 		ReadConfig rc = new ReadConfig();
 
 		System.setProperty("webdriver.chrome.driver", rc.getChromeDriverPath());
-		driver = new ChromeDriver();
-		driver.get(rc.getApplicationURL());
+		
+		ChromeOptions options = new ChromeOptions();
+	    options.addArguments("incognito");
+	    DesiredCapabilities cap = DesiredCapabilities.chrome();
+	    cap.setCapability(ChromeOptions.CAPABILITY, options);
+	    driver = new ChromeDriver(cap);
+	    
+//		driver = new ChromeDriver();
+	driver.get(rc.getApplicationURL());
+		
+		
+		
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -1,5 +1,7 @@
-23:07:53.273 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Setup Done
-23:07:53.995 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Pass
-23:07:56.108 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Setup Done
-23:07:56.109 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Pass
-23:07:59.259 [TestNG-test=Test-5] INFO  TestCases.BaseClass - verifySortByDropDowm Test method Setup Done
+00:51:56.144 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Setup Done
+00:51:54.246 [TestNG-test=Test-6] INFO  TestCases.Home_CartButton_Verification_002 - verifyCartWithoutProduct Test method Setup Done
+00:51:59.957 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Setup Done
+00:51:54.248 [TestNG-test=Test-1] INFO  TestCases.Home_AddToCart_CheckProduct_003 - ProductSelection Test method Setup Done
+00:52:01.696 [TestNG-test=Test-5] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Pass
+00:52:01.696 [TestNG-test=Test-3] INFO  TestCases.Dress_VerifyPageTitle_001 - verifyDressPage Test Case Pass
+00:52:01.696 [TestNG-test=Test-6] INFO  TestCases.Home_CartButton_Verification_002 - verifyCartWithoutProduct Test method Pass

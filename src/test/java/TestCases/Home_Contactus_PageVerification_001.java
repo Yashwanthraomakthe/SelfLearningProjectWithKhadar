@@ -28,7 +28,7 @@ public class Home_Contactus_PageVerification_001 extends BaseClass{
 
 	private static Logger log = LogManager.getLogger(Home_Contactus_PageVerification_001.class.getName());
 
-	@Test(enabled=false)
+	@Test()
 	public void verifyContactUseLink() throws InterruptedException, IOException {
 
 		HomePage hp = new HomePage(driver);
@@ -39,6 +39,7 @@ public class Home_Contactus_PageVerification_001 extends BaseClass{
 		String ExpectedTitle = "CUSTOMER SERVICE - CONTACT US";
 
 		log.info("verifyContactUseLink Test method Setup Done");
+		
 
 		Assert.assertEquals(actualtitle, ExpectedTitle);
 		log.info("verifyContactUseLink Test method Pass");
