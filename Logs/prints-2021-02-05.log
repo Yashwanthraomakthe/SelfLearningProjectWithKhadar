@@ -1,0 +1,5 @@
+18:25:58.249 [TestNG-test=Test-2] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Setup Done
+18:25:58.260 [TestNG-test=Test-2] INFO  TestCases.BaseClass - VerifyWomenPageSection Test method Pass
+18:26:04.914 [TestNG-test=Test-2] INFO  TestCases.BaseClass - verifySortByDropDowm Test method Setup Done
+18:26:04.915 [TestNG-test=Test-2] INFO  TestCases.BaseClass - verifySortByDropDowm Test method Pass
+18:26:34.073 [TestNG-test=Test-2] INFO  TestCases.Home_CartButton_Verification_002 - verifyCartWithoutProduct Test method Setup Done

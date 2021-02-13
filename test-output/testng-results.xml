@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27469" started-at="2021-01-23T11:02:37 IST" finished-at="2021-01-23T11:03:05 IST">
+  <suite name="Default suite" duration-ms="206" started-at="2021-02-09T10:15:17 IST" finished-at="2021-02-09T10:15:18 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27469" started-at="2021-01-23T11:02:37 IST" finished-at="2021-01-23T11:03:05 IST">
-      <class name="TestCases.Dress_VerifyPageTitle_001">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.Dress_VerifyPageTitle_001@1ce24091]" name="setUp" is-config="true" duration-ms="19393" started-at="2021-01-23T11:02:37 IST" finished-at="2021-01-23T11:02:57 IST">
+    <test name="Default test" duration-ms="206" started-at="2021-02-09T10:15:17 IST" finished-at="2021-02-09T10:15:18 IST">
+      <class name="BasicPrograms.NumbersOperations">
+        <test-method status="PASS" signature="swapNumbersWithOutThridNumber()[pri:0, instance:BasicPrograms.NumbersOperations@2d6eabae]" name="swapNumbersWithOutThridNumber" duration-ms="38" started-at="2021-02-09T10:15:18 IST" finished-at="2021-02-09T10:15:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDressPage()[pri:0, instance:TestCases.Dress_VerifyPageTitle_001@1ce24091]" name="verifyDressPage" duration-ms="6239" started-at="2021-01-23T11:02:57 IST" finished-at="2021-01-23T11:03:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDressPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.Dress_VerifyPageTitle_001@1ce24091]" name="tearDown" is-config="true" duration-ms="1705" started-at="2021-01-23T11:03:03 IST" finished-at="2021-01-23T11:03:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.Dress_VerifyPageTitle_001 -->
+        </test-method> <!-- swapNumbersWithOutThridNumber -->
+      </class> <!-- BasicPrograms.NumbersOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
