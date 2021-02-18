@@ -14,7 +14,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 import com.aventstack.extentreports.ExtentReports;
+import com.beust.jcommander.Parameter;
+
 import Utilities.ReadConfig;
 
 public class BaseClass {
@@ -23,7 +27,7 @@ public class BaseClass {
 	public ExtentReports extent;
 
 	@BeforeClass()
-	public void setUp() throws InterruptedException {
+	public void setUp(String b) throws InterruptedException {
 
 		ReadConfig rc = new ReadConfig();
 

@@ -20,8 +20,7 @@ public class Home_Footer_InformationLinks_Verification_004 extends BaseClass {
 	@Test()
 	public void verifyMyAccountFooterLinks() throws InterruptedException {
 
-		List<WebElement> footerLinks = driver
-				.findElements(By.xpath("//section[@id='block_various_links_footer']//ul//li//a"));
+		List<WebElement> footerLinks = driver.findElements(By.xpath("//section[@id='block_various_links_footer']//ul//li//a"));
 		int numberOfLinks = footerLinks.size();
 		System.out.println("Number of links " + numberOfLinks);
 
