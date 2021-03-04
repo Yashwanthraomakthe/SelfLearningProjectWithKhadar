@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practice for all individual concepts">
+  <test thread-count="5" name="Should Pass">
+    <classes>
+    <!-- Passed test cases -->
+      <class name="SeleniumAllConceptsiWithTestNG.Demo"/>
+      <class name="SeleniumAllConceptsiWithTestNG.ActionsDemo"/>
+      <class name="SeleniumAllConceptsiWithTestNG.AddToCartMultipleVegitables"/>
+      <class name="SeleniumAllConceptsiWithTestNG.AlertHandling"/>
+      <class name="SeleniumAllConceptsiWithTestNG.AutoSugestivdropdowncollection"/>
+      <class name="SeleniumAllConceptsiWithTestNG.Checkbox"/>
+      <class name="SeleniumAllConceptsiWithTestNG.CountOfLinksInPage"/>
+      <class name="SeleniumAllConceptsiWithTestNG.DropDown"/>
+      <class name="SeleniumAllConceptsiWithTestNG.Facebooklogin"/>
+      <class name="SeleniumAllConceptsiWithTestNG.FluentWaitConcept"/>
+      <class name="SeleniumAllConceptsiWithTestNG.FramesDemo"/>
+      <class name="SeleniumAllConceptsiWithTestNG.HandlingBrowserCertifications"/>
+      <class name="SeleniumAllConceptsiWithTestNG.ScreenshotsDemo"/>
+      <class name="SeleniumAllConceptsiWithTestNG.TableColumnSorting"/>
+      <class name="SeleniumAllConceptsiWithTestNG.TableSumOfOneRow"/>
+      <class name="SeleniumAllConceptsiWithTestNG.UptimizedAddToCart"/>
+      <class name="SeleniumAllConceptsiWithTestNG.XpathSession"/>
+      <class name="SeleniumAllConceptsiWithTestNG.ParameterizationDataProvider"/>
+      
+   <!-- Failed test cases -->   
+      <class name="SeleniumAllConceptsiWithTestNG.AutoSuggestiveDropDown"/>
+       <class name="SeleniumAllConceptsiWithTestNG.Calender"/>
+        <class name="SeleniumAllConceptsiWithTestNG.CalenderDynamicDateSelection"/>
+        <class name="SeleniumAllConceptsiWithTestNG.DynamicDropDown"/>
+        <class name="SeleniumAllConceptsiWithTestNG.HandilingMultipleWindows"/>
+        <class name="SeleniumAllConceptsiWithTestNG.LocatorsConcept"/>
+        <class name="SeleniumAllConceptsiWithTestNG.SpicejetFilightSearchWithCurrentDate"/>
+        <class name="SeleniumAllConceptsiWithTestNG.UpdatedStaticDropDown"/>
+    </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->

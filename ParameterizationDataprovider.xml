@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practice for all individual concepts">
+  <test thread-count="5" name="Should Pass">
+  
+  <parameter name ="URL" value="testing Parameterization"/>
+  <parameter name ="Password" value="testpassoword"/>
+   
+    <classes>   
+      <class name="intropackageTestNG.ParameterizationDataProvider"/>
+    </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->

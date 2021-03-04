@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practice for all individual concepts">
+  <test thread-count="5" name="Should Pass">
+    <classes>
+    <!-- Include Passed test cases from library-->
+      <class name="intropackageTestNG.Demo">
+      <methods>
+      	<include name="Demo"/>
+      </methods>
+     </class>
+     
+      <class name="intropackageTestNG.ActionsDemo">
+      <methods>
+      	<include name="ActionsDemo"/>
+      </methods>
+     </class>
+      
+      <class name="intropackageTestNG.AddToCartMultipleVegitables">
+      
+      <methods>
+      	<include name="AddToCartMultipleVegitables"/>
+      </methods>
+     </class>
+      
+      
+   <!-- Exclude Failed  test cases from execution-->   
+   
+      <class name="intropackageTestNG.AutoSuggestiveDropDown">
+      <methods>
+      	<exclude name="AutoSuggestiveDropDown"/>
+      </methods>
+     </class>
+     
+       <class name="intropackageTestNG.Calender">
+      <methods>
+      	<exclude name="Calender"/>
+      </methods>
+     </class>
+        
+    </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->

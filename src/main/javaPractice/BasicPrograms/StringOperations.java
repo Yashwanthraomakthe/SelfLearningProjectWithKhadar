@@ -1,4 +1,7 @@
 package BasicPrograms;
+
+import static org.testng.Assert.assertEquals;
+
 /*
  * Methods in String class
  * substring()	returns the substring of the string
@@ -23,6 +26,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 
+import org.apache.commons.exec.util.StringUtils;
 import org.testng.annotations.Test;
 
 public class StringOperations {
@@ -85,7 +89,7 @@ public class StringOperations {
 			trial1.add(c);
 
 		Collections.reverse(trial1);
-		ListIterator li = trial1.listIterator();
+		ListIterator<Character> li = trial1.listIterator();
 		while (li.hasNext())
 			System.out.println(li.next());
 
@@ -93,7 +97,7 @@ public class StringOperations {
 	}
 
 //------------------------------------------------------------------------------------------------------//
-	@Test(enabled = false)
+	// @Test()
 	public void duplicateCharactorsInString() {
 
 		String str = "Yashwanth";
@@ -152,60 +156,98 @@ public class StringOperations {
 	}
 //-------------------------------------------------------------------------------------------------------------
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void StringSort() {
 
 		String original = "edcba";
-        char[] chars = original.toCharArray();
-        Arrays.sort(chars);
-        String sorted = new String(chars);
-        System.out.println(sorted);
+		char[] chars = original.toCharArray();
+		Arrays.sort(chars);
+		String sorted = new String(chars);
+		System.out.println(sorted);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 	}
 //-------------------------------------------------------------------------------------------------------------
-	
-	
-	@Test()
+
+	@Test(enabled = false)
 	public void occurrenceOfCharacterInString() {
-		
+
 		String str = "Yashwanth";
-		//ASCII values ranges upto 256
-		int counter[] = new int[256]; 
+		// ASCII values ranges upto 256
+		int counter[] = new int[256];
 
-		//String length
-		int len = str.length(); 
+		// String length
+		int len = str.length();
 
-		/* This array holds the occurrence of each char, For example
-		 * ASCII value of A is 65 so if A is found twice then 
-		 * counter[65] would have the value 2, here 65 is the ASCII value
-		 * of A
+		/*
+		 * This array holds the occurrence of each char, For example ASCII value of A is
+		 * 65 so if A is found twice then counter[65] would have the value 2, here 65 is
+		 * the ASCII value of A
 		 */
-		for (int i = 0; i < len; i++) 
-			counter[str.charAt(i)]++; 
+		for (int i = 0; i < len; i++)
+			counter[str.charAt(i)]++;
 
 		// We are creating another array with the size of String
-		char array[] = new char[str.length()]; 
-		   for (int i = 0; i < len; i++) { 
-			   array[i] = str.charAt(i); 
-			   int flag = 0; 
-			   for (int j = 0; j <= i; j++) { 
-	
-				/* If a char is found in String then set the flag 
-				 * so that we can print the occurrence
+		char array[] = new char[str.length()];
+		for (int i = 0; i < len; i++) {
+			array[i] = str.charAt(i);
+			int flag = 0;
+			for (int j = 0; j <= i; j++) {
+
+				/*
+				 * If a char is found in String then set the flag so that we can print the
+				 * occurrence
 				 */
-				if (str.charAt(i) == array[j])  
-					flag++;                 
-			   } 
-	
-			   if (flag == 1)  
-			      System.out.println("Occurrence of char " + str.charAt(i)
-				 + " in the String is:" + counter[str.charAt(i)]);             
-			} 
-	        
-	        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-	   } 
-	   
-	//-------------------------------------------------------------------------------------------------------------	
+				if (str.charAt(i) == array[j])
+					flag++;
+			}
+
+			if (flag == 1)
+				System.out
+						.println("Occurrence of char " + str.charAt(i) + " in the String is:" + counter[str.charAt(i)]);
+		}
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 	}
 
+	// -------------------------------------------------------------------------------------------------------------
 
+	@Test(enabled = false)
+	public void Stringcharcount() {
+
+		String someString = "elephant";
+		char someChar = 'e';
+		int count = 0;
+
+		for (int i = 0; i < someString.length(); i++) {
+			if (someString.charAt(i) == someChar) {
+				count++;
+			}
+		}
+		// assertEquals(2, count);
+		System.out.println("Charactor count " + count);
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+//-------------------------------------------------------------------------------------------------------------
+
+	@Test(enabled=false)
+	public void ReversWordsInString() {
+
+		String original = "Vitech Systems Asia";
+
+		System.out.println("Original String" + original);
+		String[] s = original.split(" ");
+
+		String[] array = new String[s.length];
+
+		for (int i = s.length - 1; i >= 0; i--) {
+			String s1 = s[i];
+			System.out.print(s1);
+			System.out.print(" ");
+
+		}
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+//-------------------------------------------------------------------------------------------------------------
+}

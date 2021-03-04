@@ -180,4 +180,54 @@ public class NumbersOperations {
 		}
 		
 		// --------------------------------------------------------------------------------------------//
+		
+		@Test(enabled=false)
+		public void amstrangNumber() {
+			int num = 153;
+			int temp=153, rem, sum =0;
+			
+			while(num>0) {
+				rem =num%10;
+				num=num/10;
+				sum =sum+(rem*rem*rem);
+				
+			}
+			
+			if(sum==temp) {
+				System.out.println("Given number is Amstrong");
+			}else
+				System.out.println("Given Number is not an Amstrong");
+		}
+		
+		// --------------------------------------------------------------------------------------------//
+		
+		@Test(enabled=false)
+		public void factorialUsingLoops() {
+			int num = 5;
+			int fact=1;
+			for(int i=1;i<=num;i++) {
+				fact = fact*i;
+			}
+			System.out.println("Factorial of number " + num + " is " +fact);
+		}
+		
+		// --------------------------------------------------------------------------------------------//
+		
+		@Test(enabled=false)
+		public void factorialUsingRecursion() {
+			int i, fact =1;
+			int num=5;
+			
+			fact =factorial(num);
+			System.out.println("Factorial of number " + num + " is " +fact);
+		}
+
+		private int factorial(int num) {
+			if(num==0)
+			return 1;
+			else
+				return (num*(factorial(num-1)));
+		}
+		
+		// --------------------------------------------------------------------------------------------//
 }

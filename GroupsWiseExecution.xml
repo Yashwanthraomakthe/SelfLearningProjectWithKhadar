@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Practice for all individual concepts">
+  <test thread-count="5" name="Should Pass">
+  
+  <groups>
+  	<run>
+  		<exclude name="Failed"></exclude>
+  	</run>
+  
+  </groups>
+    <classes>
+    <!-- Selected 4 classes from Passed test cases -->
+      <class name="intropackageTestNG.Demo"/>
+      <class name="intropackageTestNG.ActionsDemo"/>
+      <class name="intropackageTestNG.AddToCartMultipleVegitables"/>
+      <class name="intropackageTestNG.AlertHandling"/>
+      
+      
+   <!-- All Failed test cases from library-->   
+      <class name="intropackageTestNG.AutoSuggestiveDropDown"/>
+       <class name="intropackageTestNG.Calender"/>
+        <class name="intropackageTestNG.CalenderDynamicDateSelection"/>
+        <class name="intropackageTestNG.DynamicDropDown"/>
+        <class name="intropackageTestNG.HandilingMultipleWindows"/>
+        <class name="intropackageTestNG.LocatorsConcept"/>
+        <class name="intropackageTestNG.SpicejetFilightSearchWithCurrentDate"/>
+        <class name="intropackageTestNG.UpdatedStaticDropDown"/>
+    </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->
