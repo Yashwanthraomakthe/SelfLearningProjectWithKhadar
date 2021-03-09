@@ -29,7 +29,7 @@ public class TableColumnSorting {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		System.out.println("***********************");
-		List<WebElement> itemsnames = driver.findElements(By.xpath("//table[@id='sortableTable']/tbody/tr/td[2]"));
+		List<WebElement> itemsnames = driver.findElements(By.xpath("//table[contains(@class,'table table-bordered')]/tbody/tr/td[1]"));
 		ArrayList retrivedlist = new ArrayList();
 		for (int i = 0; i < itemsnames.size(); i++) {
 			String itemname = itemsnames.get(i).getText();

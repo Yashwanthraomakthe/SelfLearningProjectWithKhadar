@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Practice for all individual concepts]">
-  <test thread-count="5" name="Should Pass(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumAllConceptsiWithTestNG.HandilingMultipleWindows">
+      <class name="BasicPrograms.StringOperations">
         <methods>
-          <include name="HandilingMultipleWindows"/>
+          <include name="reverseWordsInString"/>
         </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.HandilingMultipleWindows -->
-      <class name="SeleniumAllConceptsiWithTestNG.Calender">
-        <methods>
-          <include name="Calender"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.Calender -->
-      <class name="SeleniumAllConceptsiWithTestNG.ParameterizationDataProvider">
-        <methods>
-          <include name="readDataFromXml"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.ParameterizationDataProvider -->
-      <class name="SeleniumAllConceptsiWithTestNG.AutoSuggestiveDropDown">
-        <methods>
-          <include name="AutoSuggestiveDropDown"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.AutoSuggestiveDropDown -->
-      <class name="SeleniumAllConceptsiWithTestNG.Facebooklogin">
-        <methods>
-          <include name="Facebooklogin"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.Facebooklogin -->
-      <class name="SeleniumAllConceptsiWithTestNG.CalenderDynamicDateSelection">
-        <methods>
-          <include name="CalenderDynamicDateSelection"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.CalenderDynamicDateSelection -->
-      <class name="SeleniumAllConceptsiWithTestNG.SpicejetFilightSearchWithCurrentDate">
-        <methods>
-          <include name="SpicejetFilightSearchWithCurrentDate"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.SpicejetFilightSearchWithCurrentDate -->
-      <class name="SeleniumAllConceptsiWithTestNG.LocatorsConcept">
-        <methods>
-          <include name="LocatorsConcept"/>
-        </methods>
-      </class> <!-- SeleniumAllConceptsiWithTestNG.LocatorsConcept -->
+      </class> <!-- BasicPrograms.StringOperations -->
     </classes>
-  </test> <!-- Should Pass(failed) -->
-</suite> <!-- Failed suite [Practice for all individual concepts] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -31,7 +31,7 @@ import org.testng.annotations.Test;
 
 public class StringOperations {
 //-----------------------------------------------------------------------------------------------//
-	@Test(enabled = false)
+	// @Test(enabled = false)
 	public void reverseStringWithoutUsingMethods() {
 		String str = "Yashwanth";
 		System.out.println("The string is:" + str);
@@ -230,7 +230,7 @@ public class StringOperations {
 	}
 //-------------------------------------------------------------------------------------------------------------
 
-	@Test(enabled=false)
+	//@Test()
 	public void ReversWordsInString() {
 
 		String original = "Vitech Systems Asia";
@@ -250,4 +250,99 @@ public class StringOperations {
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 	}
 //-------------------------------------------------------------------------------------------------------------
+
+	// @Test(enabled=false)
+	public void ReplaceWords() {
+
+		String original = "USAPyramidIndiaIndiaPyramidDas";
+
+		System.out.println("Original String" + original);
+		String[] s = original.split(" ");
+
+		String[] array = new String[s.length];
+
+		for (int i = s.length - 1; i >= 0; i--) {
+			String s1 = s[i];
+			System.out.print(s1);
+			System.out.print(" ");
+
+		}
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+//-------------------------------------------------------------------------------------------------------------
+
+	// @Test()
+	public void SeparateNumberFromAlphanumericSting() {
+
+		String str = "avbkjd1122klj4 543 af";
+
+		System.out.println("Original String" + str);
+		str = str.replaceAll("[^\\d]", " ");
+		str = str.trim();
+		str = str.replaceAll(" +", " ");
+		System.out.println("Modified String" + str);
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+
+//-------------------------------------------------------------------------------------------------------------
+	// @Test()
+	public void reverseWordsInString() {
+
+		String input = "This is March";
+		// Ouput:"sihT si hcraM";
+		String[] newinput = input.split(" ");
+
+		int noOfWords = newinput.length;
+		System.out.println("Number of words in String " + noOfWords);
+		String newWord = " ";
+		for (int i = 0; i < noOfWords; i++) {
+			String word = newinput[i];
+			int wordlength = word.length();
+			for (int i1 = wordlength - 1; i1 >= 0; i1--) {
+				newWord = newWord + word.charAt(i1);
+			}
+		}
+		String reversewordsSentense = " ";
+		reversewordsSentense = reversewordsSentense + " " + newWord;
+		System.out.println("Revered words Sentence " + reversewordsSentense);
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+	// -------------------------------------------------------------------------------------------------------------
+
+	@Test()
+	public void AnagramString() {
+
+		String n1 = "SILENT";
+		String n2 = "LISTEN";
+
+		ArrayList list1 = new ArrayList();
+		ArrayList list2 = new ArrayList();
+
+		int n1Length = n1.length();
+		int n2Length = n2.length();
+		for (int i = 0; i < n1Length; i++) {
+			char c = n1.charAt(i);
+			list1.add(c);
+
+		}
+		Collections.sort(list1);
+		for (int i = 0; i < n2Length; i++) {
+			char c = n2.charAt(i);
+			list2.add(c);
+
+		}
+		Collections.sort(list2);
+
+		if (list1.equals(list2)) {
+			System.out.println("Given Strings are Anagram");
+		} else
+			System.out.println("Given Strings are not Anagram");
+
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	}
+// -------------------------------------------------------------------------------------------------------------
+
 }

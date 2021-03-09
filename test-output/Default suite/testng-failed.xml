@@ -5,7 +5,7 @@
     <classes>
       <class name="BasicPrograms.StringOperations">
         <methods>
-          <include name="ReversWordsInString"/>
+          <include name="reverseWordsInString"/>
         </methods>
       </class> <!-- BasicPrograms.StringOperations -->
     </classes>

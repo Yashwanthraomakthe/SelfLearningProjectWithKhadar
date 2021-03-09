@@ -1,5 +1,7 @@
 package BasicPrograms;
 
+import static org.testng.Assert.assertNotSame;
+
 import java.util.Arrays;
 
 import org.testng.annotations.Test;
@@ -101,5 +103,45 @@ public class ArrayOperations {
 	}
 
 	// ---------------------------------------------------------------------------------------------------------//
+	@Test(enabled=false)
+	public void reversArrayElementsWithMethods() {
 
+		int[] arrayNumbers = { 1, 5, 8, 4, 2 };
+		System.out.println("Original Array elements" + Arrays.toString(arrayNumbers));
+		Arrays.sort(arrayNumbers);
+		System.out.println("Sorted Array elements" + Arrays.toString(arrayNumbers));
+
+	}
+
+	// ---------------------------------------------------------------------------------------------------------//
+
+	@Test(enabled=false)
+	public void reversArrayElementsWithoutmethods() {
+
+		int[] a = { 1, 5, 1, 4, 2 };
+		System.out.println("Original Array elements" + Arrays.toString(a));
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i+1; j < a.length; j++) {
+				if (a[i] > a[j]) {
+					int temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+		}
+
+		System.out.println("Sorted Array elements" + Arrays.toString(a));
+
+	}
+
+	// ---------------------------------------------------------------------------------------------------------//
+	
+	@Test()
+	public void test() {
+		String s1= new String("abc");
+		String s2= new String("abc");
+	 assertNotSame(s1,s2);
+		
+	}
+	
 }

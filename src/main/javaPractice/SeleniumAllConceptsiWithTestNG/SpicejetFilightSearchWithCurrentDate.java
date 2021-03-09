@@ -1,14 +1,17 @@
 package SeleniumAllConceptsiWithTestNG;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class SpicejetFilightSearchWithCurrentDate {
 	
-	@Test(groups="Failed")
+	@Test()
 	public  void SpicejetFilightSearchWithCurrentDate() throws InterruptedException {
 		
 		
@@ -20,14 +23,23 @@ public class SpicejetFilightSearchWithCurrentDate {
 		
 		//Select source of traveling
 		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
-		driver.findElement(By.xpath("//a[@text='Chennai (MAA)']")).click();
-		Thread.sleep(2000);
+		List<WebElement> SoruceLocationsList=driver.findElements(By.xpath("//div[@id='dropdownGroup1']//div//ul/li/a"));
+		for(WebElement option:SoruceLocationsList) {
+			if(option.getText().equalsIgnoreCase("Surat (STV)")) {
+			option.click();}
+			
+		}
+		Thread.sleep(5000);
 		
 		//Select Destination of traveling
-		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
-		driver.findElement(By.xpath("(//a[@text='Goa (GOI)'])[2]")).click();
+		//driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
+		List<WebElement> destinationLocationsList=driver.findElements(By.xpath("//div[@id='dropdownGroup1']//div//ul/li/a"));
+		for(WebElement options:destinationLocationsList) {
+			if(options.getText().equalsIgnoreCase("Chennai (MAA)")) {
+			options.click();}
+			
+		}
 		Thread.sleep(2000);
-		
 		
 		//Select the current Date
 		//driver.findElement(By.xpath("//input[@id='ctl00_mainContent_view_date1']")).click();
@@ -58,7 +70,7 @@ public class SpicejetFilightSearchWithCurrentDate {
 		
 		System.out.println("filight searched successfully");
 		
-		driver.close();
+		//driver.close();
 		
 	}
 

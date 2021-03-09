@@ -17,17 +17,25 @@ public class Checkbox {
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
 		
-		System.out.println(driver.findElement(By.xpath("//input[@id='ctl00_mainContent_chk_friendsandfamily']")).isSelected());
-		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_chk_friendsandfamily']")).click();
-		Thread.sleep(2000);
-		System.out.println(driver.findElement(By.xpath("//input[@id='ctl00_mainContent_chk_friendsandfamily']")).isSelected());
+		List<WebElement>  checkboxs= driver.findElements(By.xpath("//div[@id='discount-checkbox']/div/label"));
+		for(WebElement option:checkboxs) {
+			String Checkboxnames =option.getText();
+			if(Checkboxnames.equalsIgnoreCase("Student")) {
+				option.click();
+				Thread.sleep(3000);
+			}
+			System.out.println("Check Box name:" +Checkboxnames );
+			
+		}
+		
+		
 		
 		System.out.println("check box selected");
 		
 		
 		//Number of checkbox in given page
 		List<WebElement> checkboxcount = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		System.out.println(checkboxcount.size());
+		System.out.println("Number of Checkboxs " +checkboxcount.size());
 		
 		driver.close();
 
