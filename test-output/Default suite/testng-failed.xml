@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BasicPrograms.StringOperations">
+      <class name="TestCases.Travelocity_CheckOptions_001">
         <methods>
-          <include name="reverseWordsInString"/>
+          <include name="setUp"/>
+          <include name="testAvialableSiteFeatures"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- BasicPrograms.StringOperations -->
+      </class> <!-- TestCases.Travelocity_CheckOptions_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

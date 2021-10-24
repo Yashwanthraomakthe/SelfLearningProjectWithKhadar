@@ -1,0 +1,7 @@
+Entering cat /proc/meminfo in your terminal opens the /proc/meminfo file. This is
+a virtual file that reports the amount of available and used memory.
+It contains real-time information about the system's 
+memory usage as well as thes
+ntering cat /proc/meminfo in your terminal opens the /proc/meminfo file. This is a virtual file t
+hat reports the amount of available and used memory. It contains real-time information 
+about the system's memory usage as well as the buffers and shared memory used by the
